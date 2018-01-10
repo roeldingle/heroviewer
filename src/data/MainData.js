@@ -31,6 +31,12 @@ var DATA = {
     "name": "Developers Guild of SAC",
     },
     {
+    "id": "CT-NW",
+    "dept": "CT",
+    "shortname": "NW",
+    "name": "Nights Watch",
+    },
+    {
     "id": "CD-AS",
     "dept": "CD",
     "shortname": "All Star",
@@ -51,7 +57,7 @@ var DATA = {
        name:'Lloyd Chua',
        skill:'Front end',
        avatar:require('../images/heroes/thumbnail/lloyd.jpg'),
-       attributes:[5,4,3,3],
+       attributes:[5,5,5,3],
        skills: ['HTML','CSS','PHP'],
     },
     {
@@ -198,6 +204,26 @@ var DATA = {
        attributes:[2,3,2,4],
        skills: ['HTML','CSS'],
     },
+
+    {
+       id:18,
+       team:'CT-NW',
+       name:'Darren Pangan',
+       skill:'Master Developer',
+       avatar:require('../images/heroes/thumbnail/darren.jpg'),
+       attributes:[4,5,5,4],
+       skills: ['HTML','CSS','JS','PHP','OOP'],
+    },
+    {
+       id:19,
+       team:'CT-NW',
+       name:'Kelvin Ragasa',
+       skill:'Web Developer',
+       avatar:require('../images/heroes/thumbnail/kelvin.jpg'),
+       attributes:[5,3,3,4],
+       skills: ['HTML','CSS'],
+    },
+
   ],
 
 }

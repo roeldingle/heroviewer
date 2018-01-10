@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardTitle, CardBody } from 'reactstrap';
+import { Card, CardTitle,CardSubtitle, CardBody } from 'reactstrap';
 
 class Presentation extends Component {
 
@@ -52,6 +52,7 @@ class Presentation extends Component {
               <div className="row">
                 <div className="col-10">
                   <CardTitle>{Hero.name}</CardTitle>
+                  <CardSubtitle>{Hero.skill}</CardSubtitle>
                   <img src={Hero.avatar} alt={Hero.name} title={Hero.name} className="avatar-presentation" />
                 </div>
                 <div className="col" skills={HeroWeapons}>
