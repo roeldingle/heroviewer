@@ -10,7 +10,7 @@ body {
 }
 
 .presentation-dock h4{
-  text-align: left
+  /* text-align: left */
 }
 
 .avatar{
@@ -32,14 +32,14 @@ body {
 .avatar-presentation{
   width:40%;
   margin: 4px;
-  border-radius: 110px;
+  border-radius: 30px;
   cursor: pointer;
+  margin: 0 0 1em 0;
 }
 
 .weapons{
-  width: 60px;
-  height: 60px;
-  border:2px solid orange;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
-  margin: 4px 0;
+  margin: 4px;
 }

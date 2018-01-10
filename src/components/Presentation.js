@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardTitle,CardSubtitle, CardBody } from 'reactstrap';
+import { Card ,CardSubtitle, CardBody } from 'reactstrap';
 
 class Presentation extends Component {
 
@@ -7,40 +7,41 @@ class Presentation extends Component {
     var Image = '';
     switch(skill){
       case "HTML":
-        Image = require('../images/weapons/white-book.png')
+        Image = require('../images/development/html.png')
       break;
 
       case "CSS":
-        Image =require('../images/weapons/orb-wand.png')
+        Image =require('../images/development/css.png')
       break;
 
       case "JS":
-        Image =require('../images/weapons/chain-lightning.png')
+        Image =require('../images/development/js.png')
       break;
 
       case "PHP":
-        Image =require('../images/weapons/black-book.png')
+        Image =require('../images/development/php.png')
       break;
 
       case "OOP":
-        Image =require('../images/weapons/gold-bar.png')
+        Image =require('../images/development/oop.png')
       break;
 
       case "Android":
-        Image =require('../images/weapons/chain-mail.png')
+        Image =require('../images/development/android.png')
       break;
 
       case "IOS":
-        Image =require('../images/weapons/round-shield.png')
+        Image =require('../images/development/ios.png')
       break;
 
       default:
-        Image =require('../images/weapons/round-shield.png')
+        Image =require('../images/development/html.png')
       break;
     }
 
     return Image;
   }
+
   render() {
     let Hero = this.props.data;
     let HeroWeapons = Hero.skills ? Hero.skills : [];
@@ -51,9 +52,9 @@ class Presentation extends Component {
 
               <div className="row">
                 <div className="col-10">
-                  <CardTitle>{Hero.name}</CardTitle>
-                  <CardSubtitle>{Hero.skill}</CardSubtitle>
+                  <h2>{Hero.name}</h2>
                   <img src={Hero.avatar} alt={Hero.name} title={Hero.name} className="avatar-presentation" />
+                  <CardSubtitle>{Hero.skill}</CardSubtitle>
                 </div>
                 <div className="col" skills={HeroWeapons}>
                 {
@@ -69,6 +70,5 @@ class Presentation extends Component {
     );
   }
 }
-
 
 export default Presentation;
